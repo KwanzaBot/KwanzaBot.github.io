@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <input id="result" type="text" readonly="readonly">
+            <table>
+                <tr>
+                    <td><button id="one" type="button" onclick="document.getElementById('result').value=document.getElementById('result').value+'1';">1</button></td>
+                    <td><button id="two" onclick="document.getElementById('result').value=document.getElementById('result').value+'2';">2</button></td>
+                    <td><button id="three" onclick="document.getElementById('result').value=document.getElementById('result').value+'3';">3</button></td>
+                    <td><button id="devide" onclick="document.getElementById('result').value=document.getElementById('result').value+'/';">/</button></td>
+                    <td><button id="clear" onclick="document.getElementById('result').value='';">C</button></td>
+                </tr>
+                <tr>
+                    <td><button id="four" onclick="document.getElementById('result').value=document.getElementById('result').value+'4';">4</button></td>
+                    <td><button id="five"onclick="document.getElementById('result').value=document.getElementById('result').value+'5';">5</button></td>
+                    <td><button id="six" onclick="document.getElementById('result').value=document.getElementById('result').value+'6';">6</button></td>
+                    <td><button id="multiply" onclick="document.getElementById('result').value=document.getElementById('result').value+'*';">*</button></td>
+                    <td><button id="multiply" onclick="document.getElementById('result').value=document.getElementById('result').value+'%';">%</button></td>
+                </tr>
+                <tr>
+                    <td><button id="seven" onclick="document.getElementById('result').value=document.getElementById('result').value+'7';">7</button></td>
+                    <td><button id="eight" onclick="document.getElementById('result').value=document.getElementById('result').value+'8';">8</button></td>
+                    <td><button id="nine" onclick="document.getElementById('result').value=document.getElementById('result').value+'9';">9</button></td>
+                    <td><button id="minus" onclick="document.getElementById('result').value=document.getElementById('result').value+'-';">-</button></td>
+                    <td><button id="plus" onclick="document.getElementById('result').value=document.getElementById('result').value+'+';">+</button></td>
+                </tr>
+            <table>
+                <tr>
+                    <td><button id="zero" onclick="document.getElementById('result').value=document.getElementById('result').value+'0';">0</button></td>
+                    <td><button id="." onclick="document.getElementById('result').value=document.getElementById('result').value+'.';">.</button></td>
+                    <td><button id="equal" onclick="equal()">=</button></td>
+                </tr>
+            </table>
+            </table>
+    </body>
+</html>
