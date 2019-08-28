@@ -1,5 +1,12 @@
 "use strict";
 
+let imgFlappy = new Image();
+imgFlappy.src = "flappy.png";
+
+let imgFon = new Image();
+imgFon.src = "fon.png";
+
+
 const sizeFlappy = 50;
 const gravity = 0.5 ;
 const jump = 10;
@@ -36,7 +43,8 @@ function jumpt(event){
 }
 
 function drawFlappy(x, y){
-    ctx.fillRect(x, y, sizeFlappy, sizeFlappy);
+    //ctx.fillRect(x, y, sizeFlappy, sizeFlappy);
+    ctx.drawImage(imgFlappy, x, y);
 }
 
 function drawStone1(x){
@@ -100,7 +108,7 @@ function randomInteger(min, max) {
 
 function update(){
         ctx.fillStyle = "black";
-        ctx.clearRect(0, 0, 500, 700);
+        ctx.drawImage(imgFon, 0, 0);
         drawGround();
         drawFlappy(xF, yF);
         drawStone1(stoneX1);
